@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Document</title>
+		<style>
+			body {
+				margin: 0;
+			}
+
+			main {
+				position: relative;
+				height: 100vh;
+				overflow: hidden;
+				background: #00bbff;
+			}
+
+			/* tất cả các img bơi however i like it lol, idc */
+			main img {
+				position: absolute;
+				left: 0;
+				height: auto;
+				animation: swim-right 5s linear infinite;
+			}
+
+			main img:nth-of-type(1) {
+				top: 13%;
+				width: 12vw;
+			}
+
+			main img:nth-of-type(2) {
+				top: 15%;
+				width: 18vw;
+				animation: swim-left 24s linear infinite;
+			}
+
+			main img:nth-of-type(3) {
+				top: 5%;
+				width: 50vw;
+				animation-duration: 12s;
+			}
+
+			main img:nth-of-type(4) {
+				top: 68%;
+				width: 14vw;
+				animation: swim-left 50s linear infinite;
+			}
+
+			main img:nth-of-type(5) {
+				top: 23%;
+				width: 23vw;
+				animation-duration: 28s;
+			}
+
+			main img:nth-of-type(6) {
+				top: 16%;
+				width: 43vw;
+				animation: swim-left 2s linear infinite;
+			}
+
+			main img:nth-of-type(7) {
+				top: 40%;
+				width: 3vw;
+				animation-duration: 95s;
+			}
+
+			@keyframes swim-right {
+				from {
+					transform: translateX(-100%);
+				}
+				to {
+					transform: translateX(100vw);
+				}
+			}
+			@keyframes swim-left {
+				from {
+					transform: translateX(100vw) scaleX(-1);
+				}
+				to {
+					transform: translateX(-100%) scaleX(-1);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<main aria-label="">
+			<img src="assets/goldFishSchool.png" alt="" />
+			<img src="assets/faintSchool.png" alt="" />
+			<img src="assets/shark.png" alt="" />
+			<img src="assets/turtle.png" alt="" />
+			<img src="assets/diver1.png" alt="" />
+			<img src="assets/diver2.png" alt="" />
+			<img src="assets/diver3.png" alt="" />
+		</main>
+	</body>
+</html>
